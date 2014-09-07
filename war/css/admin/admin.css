@@ -1,0 +1,12 @@
+.error {
+	color: red;
+	display: none;
+}
+
+#rightDiv {
+	text-align: left;
+}
+
+#logout {
+	float:right;
+}

@@ -1,0 +1,30 @@
+
+#playlists {
+	float:left;
+	width: 250px;
+	text-align: left;
+}
+
+.mainList:hover {
+	cursor: pointer;
+}
+
+.subList:hover {
+	font-style: italic;
+	cursor: pointer;
+}
+
+#musicPlayer {
+	float: left;
+	width: 300px;
+}
+
+#musicContainer {
+	width: 600px;
+	margin: 0px auto;
+	padding-top: 30px;
+}
+
+.lyrics {
+	display: none;
+}

@@ -1,0 +1,48 @@
+
+.lavaLamp {
+    position: relative;
+    padding: 15px; 
+    overflow: auto;
+    font-size: 24px;
+    margin: 0px auto;
+    width: 700px;
+    
+}
+
+/* Force the list to flow horizontally */
+.lavaLamp li {
+	float: left;
+	list-style: none;      
+	padding: 0px 30px 0px 30px;   
+	display: block;  	  
+	overflow: hidden;          
+}
+      
+/* Represents the background of the highlighted menu-item. */
+.lavaLamp li.backLava {
+	z-index: 3;
+	background: red;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+/* Styles for each menu-item. */    
+.lavaLamp li a { 
+	text-decoration: none; 
+	color: white; 	
+	text-align: center;    
+	cursor: pointer;
+	z-index: 10; 
+	position:relative;
+}
+
+#admin {
+	float: right;
+	text-decoration: none;
+	color: red;
+}
+
+#admin:hover {
+	font-style: italic;
+	cursor: pointer;	
+}

@@ -1,0 +1,30 @@
+#info {
+	text-align: left;
+	padding-left: 30px;
+}
+
+#myName {
+	font-size: 24px;
+	color: red;
+}
+
+.subText {
+	font-style: italic;
+	list-style-type: none;
+}
+
+#twoColumns {
+	position: relative;
+	margin: 0px auto;
+	width: 700px;
+	padding-top: 20px;
+}
+
+#slideshowHolder {
+	border: groove gray 10px; 
+	width: 200px;
+}
+
+#info a {
+	color: red;
+}

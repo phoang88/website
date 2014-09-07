@@ -1,0 +1,25 @@
+#myCanvas {
+	border: groove 10px gray;
+}
+
+#titles {
+	float:left;
+	width: 300px;
+	text-align: left;
+}
+
+.listItem:hover {
+	cursor: pointer;
+	font-style: italic;
+}
+
+#content{
+	float: left;
+	width: 800px;
+}
+
+#programmingContainer {
+	width: 1100px;
+	margin: 0px auto;
+	padding-top: 30px;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<welcome-file-list>
+		<welcome-file>homepage.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+  		<init-param>
+   			<param-name>services</param-name>
+   			<param-value/>
+  		</init-param>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>SystemServiceServlet</servlet-name>
+  		<url-pattern>/_ah/spi/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<servlet-class>website.HomeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Music</servlet-name>
+		<servlet-class>website.MusicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Music</servlet-name>
+		<url-pattern>/music</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Video</servlet-name>
+		<servlet-class>website.VideoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Video</servlet-name>
+		<url-pattern>/video</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Admin</servlet-name>
+		<servlet-class>website.admin.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Admin</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Programming</servlet-name>
+		<servlet-class>website.ProgrammingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Programming</servlet-name>
+		<url-pattern>/programming</url-pattern>
+	</servlet-mapping>
+</web-app>

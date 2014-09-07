@@ -1,0 +1,13 @@
+<link type="text/css" rel="stylesheet" href="../../css/admin/admin.css" />
+<script type="text/javascript" src="../../jss/admin/admin.js"></script>
+
+<form id="songForm" action="/admin" method="post">
+	<p>Title: <input name="title" type="text"/> <label id="titleError" class="error">* Required</label></p>
+	<p>Artist: <input name="artist" type="text"/><label id="artistError" class="error">* Required</label></p>
+	<p>URL: <input name="url" type="url"/><label id="urlError" class="error">* Required</label></p>
+	<p>Playlist: <input name="playlist" type="text"/><label id="playlistError" class="error">* Required</label></p>
+	<p>Lyrics:</p>
+	<textarea name="lyrics" rows="20" cols="60"></textarea>
+	<input type="hidden" name="actionType" value="ADD_SONG"/>
+	<p><input id="addSongBtn" type="button" value="Add"/></p>
+</form>

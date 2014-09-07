@@ -1,0 +1,21 @@
+#input {
+	text-align: left;
+	float: left;
+}
+
+#buttons{
+	text-align: center;
+}
+
+#description table {
+	border-collapse: collapse;
+	border: 1px solid white;
+}
+
+.redText {
+	color: red;
+}
+
+#description th {
+	background-color: grey;
+}
